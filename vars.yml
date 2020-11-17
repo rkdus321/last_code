@@ -41,12 +41,12 @@ instance_ami: ami-0ce107ae7af2e92b5
 instance_type: t2.micro 
 
 # set up seoul route table
-seoul_vpc_id: vpc-0c12d327c4859fcda 
-seoul_region: ap-northeast-2 
-seoul_cidr: 10.0.0.0/16 
-seoul_route_id: rtb-099c0f93e2a427f98
-seoul_subnet_id: subnet-05b9424e18c75c277 
-seoul_igw_id: igw-05ce5ce45c3525880
+seoul_vpc_id:  
+seoul_region:  
+seoul_cidr:  
+seoul_route_id: 
+seoul_subnet_id:  
+seoul_igw_id:
 
 peering_name: tokyo and seoul peering 
 
