@@ -1,0 +1,60 @@
+---
+# vars file for create-ec2
+
+# set vpc 
+region1: ap-northeast-1 
+vpc_cidr: 172.16.0.0/16
+vpc_name: tokyo vpc 
+
+
+# set subnet 
+az1: ap-northeast-1a
+az2: ap-northeast-1d 
+
+pub_subnet_cidr: 172.16.0.0/24  
+pub_subnet_name: pub tokyo
+
+pri_subnet_cidr_1: 172.16.1.0/24
+pri_subnet_name1: pri tokyo 1
+
+pri_subnet_cidr_2: 172.16.2.0/24
+pri_subnet_name2: pri tokyo
+
+db_subnet_group_name: db subnet group 
+
+ 
+igw_name: tokyo igw 
+
+web_sg_name: web sg 
+
+db_sg_name: db sg
+
+private_route_name: pri route 
+
+public_route_name: pub route
+
+key_name: ec2key 
+
+# set up web instance
+instance_name: tokyo web 
+instance_ami: ami-0ce107ae7af2e92b5 
+instance_type: t2.micro 
+
+# set up seoul route table
+seoul_vpc_id: vpc-0c12d327c4859fcda 
+seoul_region: ap-northeast-2 
+seoul_cidr: 10.0.0.0/16 
+seoul_route_id: rtb-099c0f93e2a427f98
+seoul_subnet_id: subnet-05b9424e18c75c277 
+seoul_igw_id: igw-05ce5ce45c3525880
+
+peering_name: tokyo and seoul peering 
+
+# set up db instance
+db_name: awscop 
+db_instance_name: awscop 
+db_instance_type: db.t2.micro
+master_name: pjuser 
+master_pw: 12345678 
+
+repositorie_link: 'https://github.com/suminhong/awscop_english.git'
